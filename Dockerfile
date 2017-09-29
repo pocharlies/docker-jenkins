@@ -1,6 +1,6 @@
-FROM jenkins/jenkins:2.77-alpine
+FROM jenkins/jenkins:alpine
 
-MAINTAINER Basilio Vera <basilio.vera@softonic.com>
+MAINTAINER POCharlies <pocharlies@gmail.com>
 
 ARG "version=0.1.0-dev"
 ARG "build_date=unknown"
@@ -8,11 +8,11 @@ ARG "commit_hash=unknown"
 ARG "vcs_url=unknown"
 ARG "vcs_branch=unknown"
 
-LABEL org.label-schema.vendor="basi" \
+LABEL org.label-schema.vendor="pocharlies" \
     org.label-schema.name="Jenkins" \
     org.label-schema.description="Jenkins with restore from backup dir option" \
     org.label-schema.usage="/README.md" \
-    org.label-schema.url="https://github.com/bvis/docker-jenkins/blob/master/README.md" \
+    org.label-schema.url="https://github.com/pocharlies/docker-jenkins-1/blob/master/README.md" \
     org.label-schema.vcs-url=$vcs_url \
     org.label-schema.vcs-branch=$vcs_branch \
     org.label-schema.vcs-ref=$commit_hash \

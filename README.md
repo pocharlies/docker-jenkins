@@ -9,7 +9,7 @@ This image is designed to allow the execution of any job that contains a _docker
 If you launch it with this command you'll get a working Jenkins server with the host docker injected.
 
 ```
-docker run --name softonic-jenkins \
+docker run --name jenkins \
     -u root \
     -d -p 8080:8080 -p 50000:50000 \
     -v /var/run/docker.sock:/var/run/docker.sock \
@@ -20,7 +20,7 @@ docker run --name softonic-jenkins \
 
 
 ```
-docker run --rm --name softonic-jenkins \
+docker run --rm --name jenkins \
     -u root \
     -p 8080:8080 -p 50000:50000 \
     -v jenkins-backup:/backup/jenkins_home \
